@@ -4,6 +4,7 @@ import android.os.Parcelable
 import androidx.lifecycle.SavedStateHandle
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.parcelize.Parcelize
 import kotlin.reflect.KProperty
 
 class UiStateMachineImpl<UI_STATE : Parcelable>(
@@ -55,3 +56,8 @@ fun <UI_STATE : Parcelable> SavedStateHandle.asUiStateMachine(
 //
 //    val uiState: StateFlow<OnboardingUiState> by uiStateMachine
 //}
+
+//@Parcelize
+//data class OnboardingUiState(
+//    val name: String = ""
+//): Parcelable
