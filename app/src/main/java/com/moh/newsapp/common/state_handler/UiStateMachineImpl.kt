@@ -55,6 +55,12 @@ fun <UI_STATE : Parcelable> SavedStateHandle.asUiStateMachine(
 //        savedState.asUiStateMachine(OnboardingUiState())
 //
 //    val uiState: StateFlow<OnboardingUiState> by uiStateMachine
+
+//Skip load on restoration
+//    init {
+//        if (!stateMachine.isStateRestored) {
+//            loadData()
+//        }
 //}
 
 //@Parcelize
