@@ -80,7 +80,6 @@ fun handlePagingResult(
         loadState.prepend is LoadState.Error -> loadState.prepend as LoadState.Error
         loadState.append is LoadState.Error -> loadState.append as LoadState.Error
         else -> null
-
     }
     return when {
         loadState.refresh is LoadState.Loading -> {
@@ -114,8 +113,5 @@ fun ShimmerEffect() {
                 modifier = Modifier.padding(horizontal = MediumPadding1)
             )
         }
-
     }
-
-
 }
